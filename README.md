@@ -1,5 +1,5 @@
 # NumberComparator
-An assembly program that takes and compares two numbers.
+An assembly program that takes two numbers and compares them.
 
 # About
 The program itself isn't of any real use. It's just a project for fun.
