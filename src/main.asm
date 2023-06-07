@@ -32,16 +32,17 @@ main:
     push dword in_fmt2
     call printf
     push dword 63
-	call read_int
-	mov [num2], ax
+    call read_int
+    	mov [num2], ax
 
-	mov ax, [num1]
-	mov bx, [num2]
+	   mov ax, [num1]
+	   mov bx, [num2]
 
     cmp  ax, bx
     jl   is_less
     je   is_equal
     jg   is_greater
+    jmp  error
 
 	is_less:
 	    push dword [num2]
